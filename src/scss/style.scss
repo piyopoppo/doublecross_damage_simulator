@@ -1,0 +1,45 @@
+body {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+#simulator {
+  margin: 5px 0;
+
+  .parameter {
+    display: flex;
+    margin: 2px 0;
+
+    label {
+      width: 8em;
+      color: blue;
+    }
+    input {
+      width: 3.5em;
+      text-align: right;
+    }
+  }
+  .results {
+    .result {
+      display: flex;
+
+      span:nth-child(1) {
+        width: 8em;
+        color: green;
+      }
+      span:nth-child(2) {
+        color: black;
+      }
+    }
+  }
+}

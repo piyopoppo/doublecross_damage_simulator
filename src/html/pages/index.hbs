@@ -1,0 +1,25 @@
+---
+title: DoubleCross Damage Simulator
+type: page
+layout: default
+description: ダブルクロスのダメージ計算シミュレータ
+---
+<h1>{{ title }}</h1>
+<div id="simulator">
+  <h2>Parameters</h2>
+  {{> parameter name='dices' label="Dices" value="0" }}
+  {{> parameter name='critical' label="Critical" value="8" }}
+  {{> parameter name='hit_offset' label="Hit Offset" value="4" }}
+  {{> parameter name='base_attack' label="Base Attack" value="0" }}
+  <hr />
+  {{> parameter name='trial_count' label="Trial Count" value="10000" }}
+  <input type="button" id="execute-button" value="Execute" />
+  <hr />
+  <div class="results">
+    <h2>Damage</h2>
+    {{> result name='min' label="Min" }}
+    {{> result name='max' label="Max" }}
+    {{> result name='average' label="Average" }}
+  </div>
+  <div class="status"></div>
+</div>
